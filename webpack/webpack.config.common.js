@@ -2,7 +2,7 @@ let path = require('path')
 
 module.exports = {
     entry:{
-        app:"./src/index.js"
+        app:path.resolve(__dirname,'./src/index.js')
     },
     output: {
         path:path.resolve(__dirname,'dist'),
@@ -10,6 +10,10 @@ module.exports = {
     },
     module:{
         rules:[
+            {
+                test:/\.vue$/,
+                use:['vue-loader']
+            },
             {
                 test:/\.js$/,
                 exclude:/node_modules/,
