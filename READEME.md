@@ -18,6 +18,11 @@
 babel官网 http://babeljs.io/docs/setup#installation
 另一篇 https://segmentfault.com/a/1190000008159877
 
+# 3.构建webpack vue开发环境
+
+参考链接
+https://segmentfault.com/a/1190000010265972
+https://segmentfault.com/a/1190000008678236
 
 
 zhe shi ygiei duanlu
