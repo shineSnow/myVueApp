@@ -1,0 +1,26 @@
+{
+  "name": "myvueapp",
+  "version": "1.0.0",
+  "description": "vue",
+  "main": "index.js",
+  "scripts": {
+    "start":"node devServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shineSnow/myVueApp.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "zqy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shineSnow/myVueApp/issues"
+  },
+  "homepage": "https://github.com/shineSnow/myVueApp#readme",
+  "devDependencies": {
+    "express": "^4.16.2"
+  }
+}
