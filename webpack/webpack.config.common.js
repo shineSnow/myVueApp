@@ -4,11 +4,11 @@ let HtmlWebpackPlugin = require('html-webpack-plugin')
 let CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-    entry:{
-        app:path.resolve(__dirname,'./src/index.js')
-    },
+    // entry:{
+    //     app:path.resolve(__dirname,'../src/index.js')
+    // },
     output: {
-        path:path.resolve(__dirname,'./dist'),
+        path:path.resolve(__dirname,'../dist'),
         filename: "bundle.js",
         publicPath: "/"
     },
@@ -16,6 +16,7 @@ module.exports = {
         rules:[
             {
                 test:/\.vue$/,
+                exclude:/node_modules/,
                 use:['vue-loader']
             },
             {
@@ -43,11 +44,11 @@ module.exports = {
     },
     plugins:[
         new HtmlWebpackPlugin({
-            title:'vue app',
-            template:path.resolve(__dirname,'./index.tpl.html'),
+            title:'vueApp',
+            template:path.join(__dirname,'../index.html'),
             inject:'body'
         }),
-        new CleanWebpackPlugin(['./dist'])
+        new CleanWebpackPlugin([path.resolve(__dirname,'../dist')])
     ]
 
 }

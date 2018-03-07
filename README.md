@@ -22,3 +22,6 @@ express+webpack-dev-middleware+webpack_hot-middleware
 参考链接
  http://acgtofe.com/posts/2016/02/full-live-reload-for-express-with-webpack
  https://github.com/webpack-china/awesome-webpack-cn
+
+# 5 报错
+#### 1.Module build failed: Error: Cannot find module 'vue-template-compiler'
