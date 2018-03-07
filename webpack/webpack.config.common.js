@@ -1,12 +1,16 @@
 let path = require('path')
+let webpack = require('webpack')
+let HtmlWebpackPlugin = require('html-webpack-plugin')
+let CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
     entry:{
         app:path.resolve(__dirname,'./src/index.js')
     },
     output: {
-        path:path.resolve(__dirname,'dist'),
-        filename: "bundle.js"
+        path:path.resolve(__dirname,'./dist'),
+        filename: "bundle.js",
+        publicPath: "/"
     },
     module:{
         rules:[
@@ -36,6 +40,14 @@ module.exports = {
                 use:['json-loader']
             }
         ]
-    }
+    },
+    plugins:[
+        new HtmlWebpackPlugin({
+            title:'vue app',
+            template:path.resolve(__dirname,'./index.tpl.html'),
+            inject:'body'
+        }),
+        new CleanWebpackPlugin(['./dist'])
+    ]
 
 }

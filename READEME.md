@@ -2,15 +2,6 @@
 ==============================
 参考链接 https://vue-loader.vuejs.org/zh-cn/features/css-modules.html
 
-副标题
-------
-# 一级标题
-## 二级标题
-
-
-
-
-
 
 2.配置babel插件
 ===========
@@ -24,16 +15,9 @@ babel官网 http://babeljs.io/docs/setup#installation
 https://segmentfault.com/a/1190000010265972
 https://segmentfault.com/a/1190000008678236
 
+# 4.代码的live reload和HMR模块热替换功能的实现
 
-zhe shi ygiei duanlu
-
-[TOC]
-__斜阿斯蒂芬阿斯顿
-发射点发阿斯蒂芬体__   阿斯蒂芬 *斜阿斯蒂芬阿斯蒂芬阿斯蒂芬体*
-
-~~山粗线~~
-空白行
----
-这菊花
-不会护航
-***
+express+webpack-dev-middleware+webpack_hot-middleware
+参考链接
+ http://acgtofe.com/posts/2016/02/full-live-reload-for-express-with-webpack
+ https://github.com/webpack-china/awesome-webpack-cn

@@ -1,14 +1,32 @@
-var express = require('express');
-var app = express();
-let port = 8080
+let express = require('express');
+let webpack = require('webpack')
+let webpackDevMiddleware = require('webpack-dev-middleware')
+let webpackHotMiddleware = require('webpack-hot-middleware')
+let webpackDevConfig = require('./webpack/webpack.config.dev.js')
+let app = express();
+let port = 3000
 
-app.get('/', function (req, res) {
-    res.send('Hello World!');
-});
+let compiler = webpack(webpackDevConfig)
 
-var server = app.listen(port, function () {
-    var host = server.address().address;
-    var port = server.address().port;
+// attach to the compiler & the servery
+app.use(webpackDevMiddleware(compiler, {
+// public path should be the same with webpack config
+    publicPath:webpackDevConfig.output.publicPath,
+    noInfo:true,
+    stats: {
+        colors: true
+    }
+}))
+
+app.use(webpackHotMiddleware(compiler))
+
+// app.get('/', function (req, res) {
+//     res.send('Hello World!');
+// });
+
+let server = app.listen(port, function () {
+    let host = server.address().address;
+    let port = server.address().port;
 
     console.log('Example app listening at http://%s:%s', host, port);
 });
