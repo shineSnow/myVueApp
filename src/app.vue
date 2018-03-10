@@ -7,7 +7,7 @@
 
 <template>
     <div class="wrapper">
-        <p>{{greeting}} world！</p>
+        <p>{{greeting}} world！少时诵诗书 效果图出口国和 查一查</p>
         <router-view></router-view>
     </div>
 
