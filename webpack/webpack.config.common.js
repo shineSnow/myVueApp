@@ -4,13 +4,16 @@ let HtmlWebpackPlugin = require('html-webpack-plugin')
 let CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-    // entry:{
-    //     app:path.resolve(__dirname,'../src/index.js')
-    // },
     output: {
         path:path.resolve(__dirname,'../dist'),
         filename: "bundle.js",
         publicPath: "/"
+    },
+    resolve: {
+        alias:{
+            'vue$': 'vue/dist/vue.min.js'
+        },
+        extensions: ['.js', '.css', '.vue', '.json']
     },
     module:{
         rules:[

@@ -1,14 +1,11 @@
-<style scoped>
-    p{
-        font-size: 24px;
-        text-align: center;
-    }
-</style>
-
 <template>
     <div class="wrapper">
-        <p>{{greeting}} world！少时诵诗书 效果图出口国和 查一查</p>
-        <router-view></router-view>
+        <p>{{greeting}} world!</p>
+        <transition name="fade">
+            <keep-alive>
+                 <router-view></router-view>
+            </keep-alive>
+        </transition>
     </div>
 
 </template>
@@ -23,3 +20,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    p{
+        font-size: 24px;
+        text-align: center;
+    }
+</style>

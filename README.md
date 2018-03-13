@@ -25,3 +25,5 @@ express+webpack-dev-middleware+webpack_hot-middleware
 
 # 5 报错
 #### 1.Module build failed: Error: Cannot find module 'vue-template-compiler'
+#### 2.vue做的单页面组件（单文件组件）不起作用，webpack已经打包成功，页面中没有结果http://blog.csdn.net/jiang7701037/
+#### 3. Unknown custom element: <router-view> - did you register the component correctly? For recursive components, make sure to provide the "name" option
