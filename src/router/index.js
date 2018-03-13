@@ -1,10 +1,11 @@
 import Vue from 'vue/dist/vue'
 import VueRouter  from 'vue-router'
-import Index from '../views/Index/index.vue'
-import Test from '../views/Test/index.vue'
-import BtnDemo from '../views/BtnDemo/index.vue'
-import IconDemo from '../views/IconDemo/index.vue'
-import IptDemo from '../views/IptDemo/index.vue'
+import Index from 'VIEW/Index/index.vue'
+import Test from 'VIEW/Test/index.vue'
+import BtnDemo from 'VIEW/BtnDemo/index.vue'
+import IconDemo from 'VIEW/IconDemo/index.vue'
+import IptDemo from 'VIEW/IptDemo/index.vue'
+import TableDemo from 'VIEW/TableDemo/index.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter ({
@@ -33,6 +34,11 @@ export default new VueRouter ({
             path: '/ipt',
             name: 'ipt',
             component: IptDemo
+        },
+        {
+            path: '/table',
+            name: 'table',
+            component: TableDemo
         }
     ]
 })

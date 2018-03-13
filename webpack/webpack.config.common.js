@@ -10,6 +10,9 @@ module.exports = {
         publicPath: "/"
     },
     resolve: {
+        alias:{
+            VIEW: path.resolve(__dirname, "../src/views")
+        },
         extensions: ['.js', '.css', '.vue', '.json']
     },
     module:{
