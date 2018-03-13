@@ -10,16 +10,12 @@ module.exports = {
         publicPath: "/"
     },
     resolve: {
-        alias:{
-            'vue$': 'vue/dist/vue.min.js'
-        },
         extensions: ['.js', '.css', '.vue', '.json']
     },
     module:{
         rules:[
             {
                 test:/\.vue$/,
-                exclude:/node_modules/,
                 use:['vue-loader']
             },
             {
