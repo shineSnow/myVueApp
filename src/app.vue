@@ -27,12 +27,12 @@
                         <router-link to="icon"><MenuItem name="1-2">Icon 图标</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="2">
-                        <template slot="title">
+                        <templ-ate slot="title">
                             <Icon type="ios-keypad"></Icon>
                             Form
-                        </template>
+                        </templ-ate>
                         <router-link to="ipt"> <MenuItem name="2-1">Input 输入框</MenuItem></router-link>
-                        <MenuItem name="2-2">Option 2</MenuItem>
+                       <router-link to="table"> <MenuItem name="2-2">Table </MenuItem></router-link>
                     </Submenu>
                     <Submenu name="3">
                         <template slot="title">
