@@ -27,12 +27,14 @@
                         <router-link to="icon"><MenuItem name="1-2">Icon 图标</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="2">
-                        <templ-ate slot="title">
+                        <template slot="title">
                             <Icon type="ios-keypad"></Icon>
                             Form
-                        </templ-ate>
+                        </template>
                         <router-link to="ipt"> <MenuItem name="2-1">Input 输入框</MenuItem></router-link>
                        <router-link to="table"> <MenuItem name="2-2">Table </MenuItem></router-link>
+                       <router-link to="time"> <MenuItem name="2-3">time</MenuItem></router-link>
+                       <router-link to="date"> <MenuItem name="2-4">date</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="3">
                         <template slot="title">
@@ -45,7 +47,7 @@
                     <Submenu name="4">
                         <template slot="title">
                             <Icon type="ios-photos"></Icon>
-                           View
+                           option
                         </template>
                         <MenuItem name="4-1">Option 1</MenuItem>
                         <MenuItem name="4-2">Option 2</MenuItem>
@@ -85,7 +87,7 @@
                         <BreadcrumbItem>Layout</BreadcrumbItem>
                     </Breadcrumb>
                     <Card>
-                        <div style="height: 600px">
+                        <div style="min-height: 600px">
 
                             <transition name="fade">
                                 <keep-alive>

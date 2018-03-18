@@ -4,6 +4,9 @@ import App from './app.vue'
 import router from './router'
 import iView from 'iview/dist/iview'
 import 'iview/dist/styles/iview.css'
+import api from './api'
+
+Vue.prototype.$api = api
 
 if(module.hot) {
     module.hot.accept();
