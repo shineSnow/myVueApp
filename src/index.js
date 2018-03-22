@@ -6,6 +6,7 @@ import iView from 'iview/dist/iview'
 import 'iview/dist/styles/iview.css'
 import api from './api'
 
+
 Vue.prototype.$api = api
 import store from './store'
 
