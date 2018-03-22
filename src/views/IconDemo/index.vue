@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <Icon type="ionic" size="large"></Icon><Icon type="arrow-up-a"></Icon><Icon type="arrow-right-a"></Icon><Icon type="arrow-down-a"></Icon><Icon type="arrow-left-a"></Icon>
+        <Icon type="ionic" size="32"></Icon><Icon type="arrow-up-a"  size="32"></Icon><Icon type="arrow-right-a"  size="32"></Icon><Icon type="arrow-down-a"  size="32"></Icon><Icon type="arrow-left-a"  size="32"></Icon>
     </div>
 </template>
 
@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+    .ivu-icon {
+        margin:10px;
+    }
 </style>

@@ -32,7 +32,7 @@
                             Form
                         </template>
                         <router-link to="ipt"> <MenuItem name="2-1">Input 输入框</MenuItem></router-link>
-                        <MenuItem name="2-2">Option 2</MenuItem>
+                        <router-link to="table"> <MenuItem name="2-2">table 表格</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="3">
                         <template slot="title">

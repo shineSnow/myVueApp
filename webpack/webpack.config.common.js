@@ -9,6 +9,7 @@ module.exports = {
         filename: "bundle.js",
         publicPath: "/"
     },
+    devtool: "source-map",
     resolve: {
         alias:{
             VIEW: path.resolve(__dirname, "../src/views")
