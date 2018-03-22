@@ -6,6 +6,8 @@ import BtnDemo from 'VIEW/BtnDemo/index.vue'
 import IconDemo from 'VIEW/IconDemo/index.vue'
 import IptDemo from 'VIEW/IptDemo/index.vue'
 import TableDemo from 'VIEW/TableDemo/index.vue'
+import TimeDemo from 'VIEW/Time/index.vue'
+import Date from 'VIEW/Date/index.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter ({
@@ -39,6 +41,16 @@ export default new VueRouter ({
             path: '/table',
             name: 'table',
             component: TableDemo
+        },
+        {
+            path: '/time',
+            name: 'time',
+            component: TimeDemo
+        },
+        {
+            path: '/date',
+            name: 'date',
+            component: Date
         }
     ]
 })

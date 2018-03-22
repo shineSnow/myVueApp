@@ -3,6 +3,8 @@ let webpack = require('webpack')
 let webpackDevMiddleware = require('webpack-dev-middleware')
 let webpackHotMiddleware = require('webpack-hot-middleware')
 let webpackDevConfig = require('./webpack/webpack.config.dev.js')
+let proxy = require('http-proxy-middleware')
+let proxyConfig = require('./proxy.config')
 let app = express();
 let port = 3000
 
@@ -23,6 +25,8 @@ app.use(webpackHotMiddleware(compiler))
 // app.get('/', function (req, res) {
 //     res.send('Hello World!');
 // });
+
+app.use('/',proxy(proxyConfig))
 
 let server = app.listen(port, function () {
     let host = server.address().address;

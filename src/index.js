@@ -4,6 +4,9 @@ import App from './app.vue'
 import router from './router'
 import iView from 'iview/dist/iview'
 import 'iview/dist/styles/iview.css'
+import api from './api'
+
+Vue.prototype.$api = api
 import store from './store'
 
 if(module.hot) {
@@ -11,9 +14,6 @@ if(module.hot) {
 }
 
 Vue.use(iView);
-
-
-
 
 new Vue({
     el:'#root',

@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/shineSnow/myVueApp#readme",
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",
     "babel-plugin-import": "^1.6.6",
@@ -33,6 +34,7 @@
     "express": "^4.16.2",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.6",
+    "http-proxy-middleware": "^0.18.0",
     "json-loader": "^0.5.7",
     "path": "^0.12.7",
     "style-loader": "^0.20.2",
