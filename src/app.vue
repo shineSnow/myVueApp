@@ -25,6 +25,7 @@
                         </template>
                         <router-link to="button"> <MenuItem name="1-1">Button 按钮</MenuItem></router-link>
                         <router-link to="icon"><MenuItem name="1-2">Icon 图标</MenuItem></router-link>
+                        <router-link to="test"><MenuItem name="1-3">test vuex</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="2">
                         <template slot="title">

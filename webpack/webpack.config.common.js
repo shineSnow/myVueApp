@@ -28,10 +28,6 @@ module.exports = {
                 loader:"babel-loader"
             },
             {
-                test:/\.css$/,
-                use:['style-loader','css-loader']
-            },
-            {
                 test: /\.(png|svg|jpg|gif)$/,
                 use:['file-loader']
             },
@@ -48,8 +44,13 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             title:'vueApp',
-            template:path.join(__dirname,'../index.html'),
+            template:path.resolve(__dirname,'../index.html'),
             inject:'body'
+        }),
+        new webpack.NoEmitOnErrorsPlugin(),
+        new webpack.optimize.CommonsChunkPlugin({
+            names:['vendor', 'manifest'],
+            minChunks: Infinity,
         }),
         new CleanWebpackPlugin([path.resolve(__dirname,'../dist')])
     ]
