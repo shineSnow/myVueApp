@@ -15,6 +15,7 @@ module.exports = merge(webpackCommonConfig, {
         filename: "[name].[chunkhash].js",
         publicPath:'./'
     },
+    devtool: "source-map",
     module:{
         rules:[
             {

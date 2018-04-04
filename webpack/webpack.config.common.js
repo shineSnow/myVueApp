@@ -6,10 +6,9 @@ let CleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = {
     output: {
         path:path.resolve(__dirname,'../dist'),
-        filename: "bundle.js",
+        filename: "[name].js",
         publicPath: "/"
     },
-    devtool: "source-map",
     resolve: {
         alias:{
             VIEW: path.resolve(__dirname, "../src/views")

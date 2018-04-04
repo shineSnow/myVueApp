@@ -11,6 +11,21 @@ module.exports = merge(webpackCommonConfig, {
             path.resolve(__dirname,'../src/index.js')
         ]
     },
+    devtool:'cheap-module-eval-source-map',
+    module:{
+        rules:[
+            {
+                test:/\.css$/,
+                exclude:/node_modules/,
+                use:['style-loader','css-loader','postcss-loader']
+            },
+            {
+                test:/\.css$/,
+                exclude:[path.join(__dirname,'../src')],
+                use:['style-loader','css-loader']
+            }
+        ]
+    },
     plugins:[
         new webpack.DefinePlugin({
             'process.env.NODE_ENV':JSON.stringify('production')
