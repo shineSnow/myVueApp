@@ -11,6 +11,9 @@
         background: #fff;
         box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     }
+    .layout-footer-center{
+        text-align: center;
+    }
 </style>
 
 <template>
@@ -26,6 +29,7 @@
                         <router-link to="button"> <MenuItem name="1-1">Button 按钮</MenuItem></router-link>
                         <router-link to="icon"><MenuItem name="1-2">Icon 图标</MenuItem></router-link>
                         <router-link to="test"><MenuItem name="1-3">test vuex</MenuItem></router-link>
+                        <router-link to="/"><MenuItem name="1-4"><Icon type="android-home"></Icon>Home</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="2">
                         <template slot="title">
@@ -34,6 +38,7 @@
                         </template>
                         <router-link to="ipt"> <MenuItem name="2-1">Input 输入框</MenuItem></router-link>
                         <router-link to="table"> <MenuItem name="2-2">table 表格</MenuItem></router-link>
+                        <router-link to="radio"><MenuItem name="2-3">radio 单选框</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="3">
                         <template slot="title">
@@ -86,8 +91,7 @@
                         <BreadcrumbItem>Layout</BreadcrumbItem>
                     </Breadcrumb>
                     <Card>
-                        <div style="height: 600px">
-
+                        <div :style="{minHeight:'600px'}">
                             <transition name="fade">
                                 <keep-alive>
                                     <router-view></router-view>
@@ -97,6 +101,7 @@
                         </div>
                     </Card>
                 </Content>
+                <Footer class="layout-footer-center">2011-2016 &copy; TalkingData</Footer>
             </Layout>
         </div>
     </div>

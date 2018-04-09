@@ -8,8 +8,8 @@ import IptDemo from 'VIEW/IptDemo/index.vue'
 import TableDemo from 'VIEW/TableDemo/index.vue'
 import TimeDemo from 'VIEW/Time/index.vue'
 import Date from 'VIEW/Date/index.vue'
+import RadioDemo from 'VIEW/RadioDemo/index.vue'
 Vue.use(VueRouter)
-
 export default new VueRouter ({
     routes: [
         {
@@ -51,6 +51,11 @@ export default new VueRouter ({
             path: '/date',
             name: 'date',
             component: Date
+        },
+        {
+            path:'/radio',
+            name: 'radio',
+            component: RadioDemo
         }
     ]
 })

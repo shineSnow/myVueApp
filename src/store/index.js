@@ -23,7 +23,7 @@ const store = new Vuex.Store({
     actions: {
         addAction({commit, dispatch}) {
             setTimeout(() =>{
-                commit('addIncrement',{n:5})
+                commit('addIncrement',{n:15})
                 dispatch('testAction', {test:'我被触发了'})
             },1000)
         },

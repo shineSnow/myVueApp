@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>简易加法计算器</h2>
-        <Button type="success" @click="deHandle({de:20})">每次-10</Button> <span>{{count}}</span>
+        <Button type="success" @click="deHandle({de:10})">每次-10</Button> <span>{{count}}</span>
         <Button type="warning" @click="addHandle">1s后加15</Button>
         <p>{{num2}}</p>
     </div>
