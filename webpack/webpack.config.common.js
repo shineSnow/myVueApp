@@ -11,7 +11,8 @@ module.exports = {
     },
     resolve: {
         alias:{
-            VIEW: path.resolve(__dirname, "../src/views")
+            VIEW: path.resolve(__dirname, "../src/views"),
+            CMP:path.resolve(__dirname, "../src/components")
         },
         extensions: ['.js', '.css', '.vue', '.json']
     },

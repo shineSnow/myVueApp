@@ -3,7 +3,7 @@
 </template>
 <script>
     export default {
-        data () {
+        data() {
             return {
                 columns7: [
                     {
@@ -89,13 +89,13 @@
             }
         },
         methods: {
-            show (index) {
+            show(index) {
                 this.$Modal.info({
                     title: 'User Info',
                     content: `Name：${this.data6[index].name}<br>Age：${this.data6[index].age}<br>Address：${this.data6[index].address}`
                 })
             },
-            remove (index) {
+            remove(index) {
                 this.data6.splice(index, 1);
             }
         }

@@ -1,16 +1,16 @@
 <style scoped>
-    .layout {
-        border: 1px solid #d7dde4;
-        background: #f5f7f9;
-        position: relative;
-        border-radius: 4px;
-        overflow: hidden;
-    }
+.layout {
+  border: 1px solid #d7dde4;
+  background: #f5f7f9;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
 
-    .layout-header-bar {
-        background: #fff;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-    }
+.layout-header-bar {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
 </style>
 
 <template>
@@ -40,7 +40,7 @@
                             <Icon type="ios-analytics"></Icon>
                            View
                         </template>
-                        <MenuItem name="3-1">Option 1</MenuItem>
+                        <router-link to="vueevent"> <MenuItem name="3-1">vue event</MenuItem></router-link>
                         <MenuItem name="3-2">Option 2</MenuItem>
                     </Submenu>
                     <Submenu name="4">
@@ -87,13 +87,9 @@
                     </Breadcrumb>
                     <Card>
                         <div style="height: 600px">
-
-                            <transition name="fade">
                                 <keep-alive>
                                     <router-view></router-view>
                                 </keep-alive>
-                            </transition>
-
                         </div>
                     </Card>
                 </Content>
@@ -104,9 +100,9 @@
 </template>
 
 <script>
-    export default {
-        name: 'app',
-    }
+export default {
+  name: "app"
+};
 </script>
 
 

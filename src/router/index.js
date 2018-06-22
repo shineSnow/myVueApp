@@ -8,6 +8,7 @@ import IptDemo from 'VIEW/IptDemo/index.vue'
 import TableDemo from 'VIEW/TableDemo/index.vue'
 import TimeDemo from 'VIEW/Time/index.vue'
 import Date from 'VIEW/Date/index.vue'
+import VueEvent from 'VIEW/VueEvent/index.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter ({
@@ -51,6 +52,11 @@ export default new VueRouter ({
             path: '/date',
             name: 'date',
             component: Date
+        },
+        {
+            path:'/vueevent',
+            name: 'vueevent',
+            component: VueEvent
         }
     ]
 })
