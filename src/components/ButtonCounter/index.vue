@@ -6,6 +6,7 @@
 
 <script>
     export default {
+        name: 'ButtonCounter',
         data:function () {
             return {
                 counter:0
