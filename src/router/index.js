@@ -3,6 +3,7 @@ import VueRouter  from 'vue-router'
 import Index from 'VIEW/Index/index.vue'
 import Test from 'VIEW/Test/index.vue'
 import VueEvent from 'VIEW/VueEvent/index.vue'
+import ModalPage from 'VIEW/ModalPage/index.vue'
 Vue.use(VueRouter)
 export default new VueRouter ({
     routes: [
@@ -20,6 +21,11 @@ export default new VueRouter ({
             path:'/vueevent',
             name: 'vueevent',
             component: VueEvent
+        },
+        {
+            path:'/modalPage',
+            name:'modalPage',
+            component:ModalPage
         }
     ]
 })

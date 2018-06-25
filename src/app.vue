@@ -8,19 +8,15 @@
                             <Icon type="ios-navigate"></Icon>
                            Basic
                         </template>
-                        <router-link to="button"> <MenuItem name="1-1">Button 按钮</MenuItem></router-link>
-                        <router-link to="icon"><MenuItem name="1-2">Icon 图标</MenuItem></router-link>
-                        <router-link to="test"><MenuItem name="1-3">test vuex</MenuItem></router-link>
-                        <router-link to="/"><MenuItem name="1-4"><Icon type="android-home"></Icon>Home</MenuItem></router-link>
+                        <router-link to="/"><MenuItem name="1-1"><Icon type="android-home"></Icon>Home</MenuItem></router-link>
+                        <router-link to="test"><MenuItem name="1-2"><Icon type="coffee"></Icon>vuex</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="2">
                         <template slot="title">
                             <Icon type="ios-keypad"></Icon>
-                            Form
+                            components
                         </template>
-                        <router-link to="ipt"> <MenuItem name="2-1">Input 输入框</MenuItem></router-link>
-                        <router-link to="table"> <MenuItem name="2-2">table 表格</MenuItem></router-link>
-                        <router-link to="radio"><MenuItem name="2-3">radio 单选框</MenuItem></router-link>
+                        <router-link to="modalPage"> <MenuItem name="2-1">model 组件</MenuItem></router-link>
                     </Submenu>
                     <Submenu name="3">
                         <template slot="title">
@@ -33,7 +29,7 @@
                     <Submenu name="4">
                         <template slot="title">
                             <Icon type="ios-photos"></Icon>
-                           View
+                           something
                         </template>
                         <MenuItem name="4-1">Option 1</MenuItem>
                         <MenuItem name="4-2">Option 2</MenuItem>
