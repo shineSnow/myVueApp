@@ -1,7 +1,12 @@
 <template>
     <div>
+<<<<<<< HEAD
         <h2>简易加法计算器 使用vuex方法</h2>
         <Button type="success" @click="deHandle({de:20})">每次-10</Button> <span>{{count}}</span>
+=======
+        <h2>简易加法计算器</h2>
+        <Button type="success" @click="deHandle({de:10})">每次-10</Button> <span>{{count}}</span>
+>>>>>>> acab7a4acf2b9672012ad4fa2b14e6bccdd423f3
         <Button type="warning" @click="addHandle">1s后加15</Button>
         <p>{{num2}}</p>
     </div>

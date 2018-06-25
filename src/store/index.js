@@ -29,8 +29,21 @@ const store = new Vuex.Store({
         dispatch('testAction', {test: '我被触发了'})
       }, 1000)
     },
+<<<<<<< HEAD
     testAction (tex, obj) {
       console.log(tex, obj)
+=======
+    actions: {
+        addAction({commit, dispatch}) {
+            setTimeout(() =>{
+                commit('addIncrement',{n:15})
+                dispatch('testAction', {test:'我被触发了'})
+            },1000)
+        },
+        testAction(tex,obj) {
+            console.log(tex,obj)
+        }
+>>>>>>> acab7a4acf2b9672012ad4fa2b14e6bccdd423f3
     }
   }
 })
