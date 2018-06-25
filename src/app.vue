@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-=======
-<style scoped>
-    .layout {
-        border: 1px solid #d7dde4;
-        background: #f5f7f9;
-        position: relative;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-
-    .layout-header-bar {
-        background: #fff;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-    }
-    .layout-footer-center{
-        text-align: center;
-    }
-</style>
-
->>>>>>> acab7a4acf2b9672012ad4fa2b14e6bccdd423f3
 <template>
     <div class="wrapper">
         <div class="layout">
@@ -94,12 +73,8 @@
                         <BreadcrumbItem>Layout</BreadcrumbItem>
                     </Breadcrumb>
                     <Card>
-<<<<<<< HEAD
-                        <div style="min-height: 600px">
-=======
                         <div :style="{minHeight:'600px'}">
                             <transition name="fade">
->>>>>>> acab7a4acf2b9672012ad4fa2b14e6bccdd423f3
                                 <keep-alive>
                                     <router-view></router-view>
                                 </keep-alive>
